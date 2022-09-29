@@ -1,21 +1,74 @@
 import React from "react";
+import Img1 from "../../assets/img/mobile/image-transform.jpg";
+import Img2 from "../../assets/img/mobile/image-stand-out.jpg";
+import Img3 from "../../assets/img/mobile/image-graphic-design.jpg";
+import Img4 from "../../assets/img/mobile/image-photography.jpg";
+import Img5 from "../../assets/img/desktop/image-transform.jpg";
+import Img6 from "../../assets/img/desktop/image-stand-out.jpg";
+import Img7 from "../../assets/img/desktop/image-graphic-design.jpg";
+import Img8 from "../../assets/img/desktop/image-photography.jpg";
 import LearnMoreBtn from "../../components/button/LearnMoreBtn";
 import PageContent from "../../data/PageContent.json";
+import * as Styles from "./styles";
 
-const index = () => {
+const Home = () => {
   return (
-    <div>
+    <Styles.Container>
       <section>
-        <h2></h2>
-        <p></p>
-        <LearnMoreBtn />
+        <div>
+          <picture>
+            <source media="(max-width: 375px)" srcSet={Img1} />
+            <img src={Img5} alt="Image_home" />
+          </picture>
+        </div>
+        <div>
+          <h2>{PageContent.Home.section1.title}</h2>
+          <p>{PageContent.Home.section1.about}</p>
+          <LearnMoreBtn />
+        </div>
       </section>
+
       <section>
-        <h2></h2>
-        <p></p>
+        <div>
+          <picture>
+            <source media="(max-width: 375px)" srcSet={Img2} />
+            <img src={Img6} alt="Image_home" />
+          </picture>
+        </div>
+        <div>
+          <h2>{PageContent.Home.section2.title}</h2>
+          <p>{PageContent.Home.section2.about}</p>
+          <LearnMoreBtn />
+        </div>
       </section>
-    </div>
+
+      <section>
+        <div>
+          <picture>
+            <source media="(max-width: 375px)" srcSet={Img3} />
+            <img src={Img7} alt="Image_home" />
+          </picture>
+        </div>
+        <div>
+          <h2>{PageContent.Home.section3.title}</h2>
+          <p>{PageContent.Home.section3.about}</p>
+        </div>
+      </section>
+
+      <section>
+        <div>
+          <picture>
+            <source media="(max-width: 375px)" srcSet={Img4} />
+            <img src={Img8} alt="Image_home" />
+          </picture>
+        </div>
+        <div>
+          <h2>{PageContent.Home.section3.title}</h2>
+          <p>{PageContent.Home.section3.about}</p>
+        </div>
+      </section>
+    </Styles.Container>
   );
 };
 
-export default index;
+export default Home;
