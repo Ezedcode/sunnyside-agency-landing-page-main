@@ -4,8 +4,8 @@ import * as Styles from "./styles";
 
 const NavBar = () => {
   return (
-    <Styles.Container>
-      <ul>
+    <Styles.Container className="nav-bar">
+      <ul className="nav-list">
         <li>
           <Link to="/">About</Link>
         </li>

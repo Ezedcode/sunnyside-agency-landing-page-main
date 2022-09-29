@@ -1,14 +1,16 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  position: relative;
+  text-align: center;
+  height: 54.5vw;
+  background-color: red;
 
-  & img {
+  & .container {
     position: absolute;
     left: 0;
     top: 0;
     width: 100%;
-    z-index: -1;
+    z-index: 1;
   }
 
   & .header {
@@ -20,15 +22,79 @@ export const Container = styled.div`
     justify-content: space-between;
   }
 
-  & button {
+  & .menuBtn {
     display: none;
     background: none;
     border: none;
   }
 
-  @media screen and (min-width: 375px) {
-    & button {
+  & h1 {
+    color: hsl(0, 0%, 100%);
+    font-size: 42px;
+    letter-spacing: 5px;
+    margin: 8% auto;
+  }
+
+  & img {
+    width: 100%;
+  }
+
+  @media screen and (max-width: 375px) {
+    height: 538px;
+
+    & .menuBtn {
       display: block;
+    }
+
+    & .showMenuBtn path {
+      fill: hsl(0, 0%, 100%, 0.5);
+    }
+
+    & .menu {
+      position: absolute;
+      display: none;
+      top: 5rem;
+      left: 0;
+      width: 100%;
+    }
+
+    & .showMenu {
+      display: block;
+    }
+
+    & .menu .triangle {
+      position: relative;
+      width: 85%;
+      height: 2rem;
+      margin: 0 auto;
+    }
+
+    & .menu .triangle div {
+      position: absolute;
+      right: 0;
+      border-top: 2rem solid transparent;
+      border-right: 2rem solid hsl(0, 0%, 100%);
+    }
+
+    & .menu .menu-container {
+      width: 85%;
+      height: 242px;
+      margin: 0 auto;
+      padding: 40px 0;
+      background-color: hsl(0, 0%, 100%);
+    }
+
+    & .nav-list li {
+      padding-bottom: 37px;
+    }
+
+    & .nav-list a {
+      color: hsl(232, 10%, 55%);
+    }
+
+    & h1 {
+      width: 8em;
+      margin: 48px auto;
     }
   }
 `;

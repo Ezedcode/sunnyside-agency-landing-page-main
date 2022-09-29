@@ -8,8 +8,12 @@ export const GlobalStyle = createGlobalStyle`
     font-family: "Barlow", sans-serif;
   }
 
-  h1 {
-    font-family: "Fraunces 9pt", serif;
-    font-size: 2em;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Fraunces", serif;
   }
 `;
