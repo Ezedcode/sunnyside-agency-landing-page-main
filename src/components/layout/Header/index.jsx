@@ -53,6 +53,7 @@ const Header = () => {
         <source media="(max-width: 375px)" srcSet={ImageHeaderMobile} />
         <img src={ImageHeaderDesktop} alt="Image_header" />
       </picture>
+      {showMenu && <Styles.GlobalStyle />}
     </Styles.Container>
   );
 };

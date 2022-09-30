@@ -1,9 +1,8 @@
-import styled from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
 
 export const Container = styled.div`
   text-align: center;
-  height: 54.5vw;
-  background-color: red;
+  height: 54.6vw;
 
   & .container {
     position: absolute;
@@ -81,6 +80,7 @@ export const Container = styled.div`
       height: 242px;
       margin: 0 auto;
       padding: 40px 0;
+      box-shadow: 0px 0px 2px hsl(0, 10%, 45%);
       background-color: hsl(0, 0%, 100%);
     }
 
@@ -96,5 +96,12 @@ export const Container = styled.div`
       width: 8em;
       margin: 48px auto;
     }
+  }
+`;
+
+export const GlobalStyle = createGlobalStyle`
+  body {
+    height: 100vh;
+    overflow: hidden;
   }
 `;
