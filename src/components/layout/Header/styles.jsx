@@ -39,7 +39,7 @@ export const Container = styled.div`
   }
 
   @media screen and (max-width: 375px) {
-    height: 538px;
+    height: 498px;
 
     & .menuBtn {
       display: block;

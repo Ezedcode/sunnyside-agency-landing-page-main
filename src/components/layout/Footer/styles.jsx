@@ -8,6 +8,7 @@ export const Container = styled.footer`
 
   & a {
     color: hsl(167, 40%, 24%);
+    transition: 0.5s;
   }
 
   & a:hover {
@@ -18,6 +19,7 @@ export const Container = styled.footer`
   & path {
     fill: hsl(167, 40%, 24%);
     cursor: pointer;
+    transition: 0.5s;
   }
 
   & li:hover path {

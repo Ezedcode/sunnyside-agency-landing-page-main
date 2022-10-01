@@ -19,7 +19,7 @@ const Btn = styled.button`
     font-weight: bolder;
     font-size: 15px;
     letter-spacing: 1px;
-    margin-left: 7.5px;
+    margin-left: 7.7px;
   }
 
   & .first,
