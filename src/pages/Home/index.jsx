@@ -28,7 +28,7 @@ const Home = () => {
       <section className="section1">
         <div>
           <picture>
-            <source media="(max-width: 375px)" srcSet={Img1} />
+            <source media="(max-width: 1204px)" srcSet={Img1} />
             <img src={Img5} alt="Image_home" />
           </picture>
         </div>
@@ -46,7 +46,7 @@ const Home = () => {
       <section className="section2">
         <div>
           <picture>
-            <source media="(max-width: 375px)" srcSet={Img2} />
+            <source media="(max-width: 1204px)" srcSet={Img2} />
             <img src={Img6} alt="Image_home" />
           </picture>
         </div>
@@ -65,7 +65,7 @@ const Home = () => {
         <div>
           <div>
             <picture>
-              <source media="(max-width: 375px)" srcSet={Img3} />
+              <source media="(max-width: 1204px)" srcSet={Img3} />
               <img src={Img7} alt="Image_home" />
             </picture>
           </div>
@@ -79,7 +79,7 @@ const Home = () => {
         <div>
           <div>
             <picture>
-              <source media="(max-width: 375px)" srcSet={Img4} />
+              <source media="(max-width: 1204px)" srcSet={Img4} />
               <img src={Img8} alt="Image_home" />
             </picture>
           </div>
@@ -115,19 +115,19 @@ const Home = () => {
       </section>
       <section className="section5">
         <picture>
-          <source media="(max-width: 375px)" srcSet={Img12} />
+          <source media="(max-width: 1204px)" srcSet={Img12} />
           <img src={Img16} alt="Image_home" />
         </picture>
         <picture>
-          <source media="(max-width: 375px)" srcSet={Img13} />
+          <source media="(max-width: 1204px)" srcSet={Img13} />
           <img src={Img17} alt="Image_home" />
         </picture>
         <picture>
-          <source media="(max-width: 375px)" srcSet={Img14} />
+          <source media="(max-width: 1204px)" srcSet={Img14} />
           <img src={Img18} alt="Image_home" />
         </picture>
         <picture>
-          <source media="(max-width: 375px)" srcSet={Img15} />
+          <source media="(max-width: 1204px)" srcSet={Img15} />
           <img src={Img19} alt="Image_home" />
         </picture>
       </section>

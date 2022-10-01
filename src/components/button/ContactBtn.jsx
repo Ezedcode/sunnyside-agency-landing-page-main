@@ -6,9 +6,22 @@ const Btn = styled.button`
   height: 3.5rem;
   border: none;
   border-radius: 31px;
-  background-color: hsl(51, 100%, 49%);
-  @media screen and (max-width: 375px) {
+  background-color: hsl(0, 0%, 100%);
+  transition: 0.5s;
+  &:hover {
+    cursor: pointer;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(0, 0%, 100%, 0.2);
+  }
+
+  @media screen and (max-width: 792px) {
     background-color: hsl(51, 100%, 49%);
+    hover: none;
+    &:hover {
+      cursor: pointer;
+      color: hsl(0, 0%, 100%);
+      background-color: hsl(198, 62%, 26%);
+    }
   }
 `;
 

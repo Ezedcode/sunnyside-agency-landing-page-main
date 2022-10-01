@@ -1,8 +1,28 @@
-import styled, { createGlobalStyle } from "styled-components";
+import styled, { createGlobalStyle, keyframes } from "styled-components";
+
+const animation = keyframes`
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+`;
+
+const animation2 = keyframes`
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+`;
 
 export const Container = styled.div`
   text-align: center;
-  height: 54.6vw;
+  height: 100vh;
 
   & .container {
     position: absolute;
@@ -27,6 +47,30 @@ export const Container = styled.div`
     border: none;
   }
 
+  & .menu-container {
+    display: flex;
+  }
+
+  & .nav-list {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding-right: 3rem;
+  }
+
+  & .nav-list a {
+    color: hsl(0, 0%, 100%);
+    transition: 0.5s;
+  }
+
+  & .nav-list a:hover {
+    color: hsl(232, 10%, 55%);
+  }
+
+  & .nav-list li:nth-child(2) {
+    padding: 0 3rem;
+  }
+
   & h1 {
     color: hsl(0, 0%, 100%);
     font-size: 42px;
@@ -36,9 +80,10 @@ export const Container = styled.div`
 
   & img {
     width: 100%;
+    height: 100%;
   }
 
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 792px) {
     height: 498px;
 
     & .menuBtn {
@@ -57,8 +102,14 @@ export const Container = styled.div`
       width: 100%;
     }
 
+    & .hideMenu {
+      display: block;
+      animation: ${animation2} 1s !important;
+    }
+
     & .showMenu {
       display: block;
+      animation: ${animation} 1s;
     }
 
     & .menu .triangle {
@@ -82,9 +133,21 @@ export const Container = styled.div`
       padding: 40px 0;
       box-shadow: 0px 0px 2px hsl(0, 10%, 45%);
       background-color: hsl(0, 0%, 100%);
+      flex-direction: column;
+      align-items: center;
+    }
+
+    & .nav-list {
+      padding-right: 0px;
+      flex-direction: column;
     }
 
     & .nav-list li {
+      padding-bottom: 37px;
+    }
+
+    & .nav-list li:nth-child(2) {
+      padding: 0px;
       padding-bottom: 37px;
     }
 

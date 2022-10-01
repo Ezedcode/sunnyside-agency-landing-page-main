@@ -19,9 +19,13 @@ const Header = () => {
       setClassActiveMenu("showMenu");
       setClassActiveMenuBtn("showMenuBtn");
     } else {
-      setShowMenu(false);
       setClassActiveMenu("hideMenu");
-      setClassActiveMenuBtn("hideMenuBtn");
+
+      setTimeout(() => {
+        setShowMenu(false);
+        setClassActiveMenu(undefined);
+        setClassActiveMenuBtn(undefined);
+      }, 1 * 1000);
     }
   };
 

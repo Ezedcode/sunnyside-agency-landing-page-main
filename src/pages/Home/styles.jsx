@@ -132,8 +132,9 @@ export const Container = styled.div`
     margin-top: 5rem;
   }
 
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 1204px) {
     text-align: center;
+    max-width: 375px;
 
     & button {
       text-align: center;
