@@ -189,7 +189,7 @@ export const Container = styled.div`
     }
 
     & .section4 .testimonials {
-      width: 555px;
+      width: 100%;
       flex-direction: column;
     }
 
